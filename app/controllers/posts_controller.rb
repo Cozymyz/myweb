@@ -13,6 +13,17 @@ class PostsController < ApplicationController
     end
     
     def create
-        p "受信パラメータ : #{params}"
+        @post = Post.new(post_params)
+        if @post.save
+            redirect_to posts_path
+        else
+            # p "エラー確認: #{@post.errors.inspect}"
+            render "new", status: :unprocessable_entity
+        end
+    end
+    
+    private
+    def post_params
+        params.require(:post).permit(:title, :body)
     end
 end
