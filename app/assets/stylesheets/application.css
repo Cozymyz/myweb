@@ -59,3 +59,11 @@ textarea {
     color: red;
     font-weight: bold;
 }
+
+.command {
+    font-size: 12px;
+}
+
+.command-button {
+    display: inline-block;
+}
