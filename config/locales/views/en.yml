@@ -29,3 +29,8 @@
 
 en:
   hello: "Hello world"
+  posts:
+    index:
+        add_new: Add New
+        edit: Edit
+        delete: Delete

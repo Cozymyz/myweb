@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+ @import "bootstrap";
 body {
     font-family: Verdana, sans-serif;
     font-size: 14px;
@@ -20,9 +21,9 @@ body {
 
 h2 {
     font-size: 16px;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #ddd;
+    // padding-bottom: 10px;
+    // margin-bottom: 15px;
+    // border-bottom: 1px solid #ddd;
 }
 
 .container {
@@ -30,20 +31,20 @@ h2 {
     margin: 20px auto;
 }
 
-ul > li {
-    margin-bottom: 5px;
-}
+// ul > li {
+//     margin-bottom: 5px;
+// }
 
 .logo {
     width: 400px;
     height: 50px;
 }
 
-.header-menu{
-    font-size: 12px;
-    font-weight: normal;
-    float: right;
-}
+// .header-menu{
+//     font-size: 12px;
+//     font-weight: normal;
+//     float: right;
+// }
 
 input[type="text"], textarea {
     box-sizing: border-box;
@@ -60,10 +61,10 @@ textarea {
     font-weight: bold;
 }
 
-.command {
-    font-size: 12px;
-}
+// .command {
+//     font-size: 12px;
+// }
 
-.command-button {
-    display: inline-block;
-}
+// .command-button {
+//     display: inline-block;
+// }

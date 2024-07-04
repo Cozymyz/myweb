@@ -54,6 +54,14 @@ group :development do
   gem "web-console"
   
   gem "annotate"
+  
+  gem "i18n_generators"
+  
+  gem "bootstrap", '~> 5.3.0'
+  
+  gem "sass-rails"
+  
+  gem "http_accept_language"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
