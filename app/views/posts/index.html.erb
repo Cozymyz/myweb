@@ -6,7 +6,11 @@
     <% @posts.each do |post| %>
         <li class="list-group-item d-flex justify-content-between">
             <div>
-                <%= link_to post.title, post_path(post) %><br />
+                <%= link_to post.title, post_path(post) %>
+                <% if post.comments.any? %>
+                    <span class="badge bg-primary rounded-pill"><%= post.comments.size %></span>
+                <% end %>
+                <br />
                 <span class="text-secondary">
                     <%= l(post.created_at, format: :long) %>
                 </span>
