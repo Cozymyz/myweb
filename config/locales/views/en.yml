@@ -31,6 +31,13 @@ en:
   hello: "Hello world"
   posts:
     index:
-        add_new: Add New
-        edit: Edit
-        delete: Delete
+      add_new: Add New
+      edit: Edit
+      delete: Delete
+    signin:
+      signin: Sign In
+      signout: Sign Out
+      signup: Sign Up
+  users:
+    form:
+      cancel: Cancel
