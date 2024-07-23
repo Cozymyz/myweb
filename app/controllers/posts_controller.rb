@@ -10,10 +10,12 @@ class PostsController < ApplicationController
     
     def new
         @post = Post.new
+        authorize @post
     end
     
     def create
-        @post = Post.new(post_params)
+        @post = Post.new(post_params.merge({user_id: session[:user_id]}))
+        authorize @post
         if @post.save
             redirect_to posts_path
         else

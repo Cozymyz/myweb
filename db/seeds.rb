@@ -7,6 +7,11 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+user = User.create(signin_name: 'user1',
+    display_name :'分大太郎',
+    password: 'bunndai',
+    password_confirmation: 'bundai')
+
 5.times do |i|
     Post.create(title: "title #{i}", body: "body #{i}")
 end

@@ -62,6 +62,8 @@ group :development do
   gem "sass-rails"
   
   gem "http_accept_language"
+  
+  gem "pundit"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"

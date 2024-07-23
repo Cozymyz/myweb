@@ -1,4 +1,5 @@
 <h2><%= @post.title %></h2>
+<div class="text-end"><%= @post.user.display_name %></div>
 <%= simple_format @post.body %>
 
 <h3>Comments</h3>
